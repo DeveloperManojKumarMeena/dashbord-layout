@@ -44,6 +44,7 @@ html,body{
     height: 160px;
     width: 160px;
     border: 1px solid orange;
+    position: relative;
     border-radius: 50%;
    padding: 20px;
     box-shadow: 6px 6px 10px 1px rgba(255, 165, 0, 0.15)
@@ -66,7 +67,6 @@ circle{
     stroke-width: 20px;
     stroke-dashoffset: 450;
     stroke-dasharray: 450;
-    position: relative;
     animation: anim 2s linear forwards;
 }
 @keyframes anim {
@@ -75,8 +75,9 @@ circle{
     }
 }
 svg{
-    position: absolute;
-    top: 135px;
+   position: absolute;
+   top: 0;
+   left: 0;
 }
 .incricle p{
     font-size: xx-small;
